@@ -1,0 +1,29 @@
+<h1 mat-dialog-title>Customer</h1>
+<form [formGroup]="Reactiveform" (ngSubmit)="SaveCustomer()">
+    <div mat-dialog-content>
+        <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input placeholder="Name" matInput formControlName="name">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input placeholder="Email" matInput formControlName="email">
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Phone</mat-label>
+            <input placeholder="Phone" matInput formControlName="phone">
+        </mat-form-field>
+
+        <mat-form-field>
+            <mat-label>Image</mat-label>
+            <input placeholder="image" matInput formControlName="image">
+        </mat-form-field>
+        
+       
+ 
+    </div>
+    <div mat-dialog-actions>
+      <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+      <button type="submit" mat-raised-button color="primary" cdkFocusInitial>Save</button>
+    </div>
+</form>
